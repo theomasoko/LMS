@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EBooks</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url(photos/schoolbackground\ n.jpg);
+            background-size: cover;
+            background-position: top center;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Additional styles for slideshow and dropdown */
+        #popular-books {
+            text-align: center;
+            
+        }
+        #popular-books img {
+            max-width: 250px;
+            margin: 0 50px;
+            
+
+        }
+        .slideshow-container {
+            position: relative;
+            display: inline-block;
+        }
+        .fade {
+            display: none;
+        }
+        .fade img {
+            height: 300px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(4, 0, 0, 0.5), 0 0 20px rgba(58, 29, 144, 0.647);
+
+
+        }
+
+        .dropbtn{
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0c148c; /* Blue color for the button */
+            color: #fff; /* White text color */
+            cursor: pointer;
+
+        }
+        .dropdown {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        
+        .dropdown-content {
+            display: none;
+            position: relative;
+            background-color: #0c148c;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 10px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: flex;
+
+
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 130px;
+            height: 10vh;
+            width: 100vw;}
+        
+        .dropdown-content a:hover {
+            background-color: rgba(80, 87, 224, 0.3);
+    box-shadow: 0 8px 12px rgba(57, 52, 52, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<section id="header"> 
+    <div class="header-cont">
+        <div class="nav-bar">
+            <div class="LOGO">
+                <a href="home.html">
+                    <img src="photos/logo-bac.png" alt="Home Logo">
+                </a>
+            </div>
+            
+
+            <div class="nav-list">
+                <div class="hamburger"><div class="bar"></div></div>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="Books.html">BOOKS</a></li>
+                    <li><a href="NEWSPAPER.html">NEWS PAPERS</a></li>
+                    <li><a href="Ebooks.html">EBOOKS</a></li>
+                    <li><a href="#news">NEWS & EVENTS</a></li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="home">
+    <!-- Adding Popular Books Slideshow -->
+    <div id="popular-books">
+        <h2>Popular Books</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="photos/java.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/romeoL80_.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/wolfjpg.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="menuuu">
+        <!-- Dropdown menu for genres -->
+        <div class="dropdown">
+            <button class="dropbtn">GENRES</button>
+            <div class="dropdown-content">
+                <a href="#">Fiction</a>
+                <a href="#">Mystery</a>
+                <a href="#">Romance</a>
+                <a href="#">Science Fiction</a>
+                <a href="#">Thriller</a>
+                <a href="#">Fantasy</a>
+                <a href="#">Historical Fiction</a>
+                <!-- Add more genres as needed -->
+            </div>
+        </div>
+    </div>
+
+
+<section class="bookss"> 
+    <!-- grid boooks -->
+
+    <!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/atomic QL80_.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>Atomic Habits</h3>
+            <p>Author: James Clear</p>
+            <p>Genre: Self-help</p>
+            <p>Rating: 7.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/salesssssAE70-Img400.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>Blue Ocean Strategy</h3>
+            <p>Author: Renée Mauborgne, W. Chan Kim</p>
+            <p>Genre: Business</p>
+            <p>Rating: 7.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/powerQL80_.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>The Power of Habit</h3>
+            <p>Author:  Charles Duhigg </p>
+            <p>Genre: Self help</p>
+            <p>Rating: 4.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/harryporter.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>Harry Potter and the Philosopher's Stone</h3>
+            <p>Author: J. K. Rowling </p>
+            <p>Genre: Fiction</p>
+            <p>Rating: 5.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/java.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>aHead First Java</h3>
+            <p>Genre: Programming</p>
+            <p>Rating: 6.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/richdad .jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Genre: personal finance </p>
+            <p>Rating: 8.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/atomic QL80_.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>Atomic Habits</h3>
+                <p>Author: James Clear</p>
+                <p>Genre: Self-help</p>
+                <p>Rating: 7.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/salesssssAE70-Img400.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>Blue Ocean Strategy</h3>
+                <p>Author: Renée Mauborgne, W. Chan Kim</p>
+                <p>Genre: Business</p>
+                <p>Rating: 7.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/powerQL80_.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>The Power of Habit</h3>
+                <p>Author:  Charles Duhigg </p>
+                <p>Genre: Self help</p>
+                <p>Rating: 4.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/harryporter.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>Harry Potter and the Philosopher's Stone</h3>
+                <p>Author: J. K. Rowling </p>
+                <p>Genre: Fiction</p>
+                <p>Rating: 5.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/java.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>aHead First Java</h3>
+                <p>Genre: Programming</p>
+                <p>Rating: 6.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/richdad .jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>Rich Dad Poor Dad</h3>
+                <p>Genre: personal finance </p>
+                <p>Rating: 8.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+
+    
+    <!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/atomic QL80_.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>Atomic Habits</h3>
+            <p>Author: James Clear</p>
+            <p>Genre: Self-help</p>
+            <p>Rating: 7.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/salesssssAE70-Img400.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>Blue Ocean Strategy</h3>
+            <p>Author: Renée Mauborgne, W. Chan Kim</p>
+            <p>Genre: Business</p>
+            <p>Rating: 7.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/powerQL80_.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>The Power of Habit</h3>
+            <p>Author:  Charles Duhigg </p>
+            <p>Genre: Self help</p>
+            <p>Rating: 4.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/harryporter.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>Harry Potter and the Philosopher's Stone</h3>
+            <p>Author: J. K. Rowling </p>
+            <p>Genre: Fiction</p>
+            <p>Rating: 5.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/java.jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>aHead First Java</h3>
+            <p>Genre: Programming</p>
+            <p>Rating: 6.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+<!-- Inside the section with id="home" -->
+<div class="books-grid">
+    <!-- Repeat this block for each book -->
+    <div class="book-tile">
+        <img src="photos/richdad .jpg" alt="Book Cover">
+        <div class="book-info">
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Genre: personal finance </p>
+            <p>Rating: 8.5</p>
+            <p>Availability: In stock</p>
+        </div>
+    </div>
+    <!-- Repeat end -->
+</div>
+
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/atomic QL80_.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>Atomic Habits</h3>
+                <p>Author: James Clear</p>
+                <p>Genre: Self-help</p>
+                <p>Rating: 7.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/salesssssAE70-Img400.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>Blue Ocean Strategy</h3>
+                <p>Author: Renée Mauborgne, W. Chan Kim</p>
+                <p>Genre: Business</p>
+                <p>Rating: 7.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/powerQL80_.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>The Power of Habit</h3>
+                <p>Author:  Charles Duhigg </p>
+                <p>Genre: Self help</p>
+                <p>Rating: 4.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/harryporter.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>Harry Potter and the Philosopher's Stone</h3>
+                <p>Author: J. K. Rowling </p>
+                <p>Genre: Fiction</p>
+                <p>Rating: 5.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/java.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>aHead First Java</h3>
+                <p>Genre: Programming</p>
+                <p>Rating: 6.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    <!-- Inside the section with id="home" -->
+    <div class="books-grid">
+        <!-- Repeat this block for each book -->
+        <div class="book-tile">
+            <img src="photos/richdad .jpg" alt="Book Cover">
+            <div class="book-info">
+                <h3>Rich Dad Poor Dad</h3>
+                <p>Genre: personal finance </p>
+                <p>Rating: 8.5</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+        <!-- Repeat end -->
+    </div>
+    
+    
+    </section>
+   
+
+    
+<!-- footer -->
+<section id="footer">
+    <div class="footer-cont">
+
+
+
+
+        <h2 class="section-title" > CONTACT <span>INFO</span></h1>
+
+
+            <div class=" contact-item" style="">
+                <div class="icon"><img src="imgs/phone_12383953.png" alt=""></div>
+
+                <div class="contact-info" >
+                    <h2>Phone</h1>
+                    <h1>+267 77748594</h2>
+                    <h1>+267 73456543</h2>
+                </div>
+            </div>
+
+            <div class=" contact-item">
+                <div class="icon"><img src="imgs/mail_7770018.png" alt=""></div>
+
+                <div class="contact-info" >
+                    <h2>Email</h1>
+                    <h1>cse22-052@thuto.bac.ac.bw</h2>
+                    <h1>cse22-038@thuto.bac.ac.bw</h2>
+                    <h1>cse22-062@thuto.bac.ac.bw</h2>
+                </div>
+            </div>
+
+            <div class=" contact-item">
+                <div class="contact-info" >
+                    <h2>Address</h1>
+                    <h1>Plot 50661, Fairgrounds Office Park </h1
+                    <h1>Private Bag 00319 Gaborone, Botswana</h1>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+        <div class="brand">
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="photos/fbbbbbbbbbbbbbbb9857d.png" alt=""></a>
+                </div>
+            </div>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="photos/twitter-x-logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="photos/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <h2 class="section-title" style="font-size: 15px;">Copyright © 2024 by THEOH OATS JAMAILAH. All rights reserved.</h2>
+    </div>
+</section>
+</section>
+
+
+<!-- JavaScript for slideshow -->
+
+
+<script src="./menu.js" > </script>
+
+
+</body>
+</html>
