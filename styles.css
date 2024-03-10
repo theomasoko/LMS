@@ -259,7 +259,7 @@ body {
     color: rgb(0, 0, 0);
     backdrop-filter: blur(3px); /* Add a blur effect */
     background-color: rgba(13, 72, 120, 0.5); /* Adjust the background color and opacity */
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .search {
@@ -271,6 +271,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color and opacity */
     padding: 20px; /* Add padding to create space around the content */
     border-radius: 10px;
+    margin-top: 100px;
 }
 
 .search h1 {
