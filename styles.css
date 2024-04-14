@@ -213,6 +213,14 @@ justify-content: center;
 
 
 
+
+
+/* menuu */
+
+
+
+
+
 /* MOBILE  */
 
 
@@ -240,8 +248,25 @@ justify-content: center;
     
 }
 
-
+@media screen and (max-width: 1000px) {
+    .search-btn {
+      display: none;
+    }
+  }
 /* header */
+
+
+
+
+
+li form input[type="text"] {
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+li form button.search-btn {
+    font-weight: bold;
+}
 
 
 
